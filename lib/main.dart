@@ -1,10 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MaterialApp(
+void main() {
+  SystemChrome.setEnabledSystemUIOverlays([]);
+  return runApp(MaterialApp(
   home: MainApp()
   ));
+}
 class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
